@@ -11,6 +11,7 @@ void setup() {
   for (int sensorIndex = 0; sensorIndex < 6; sensorIndex++) {
     Serial.print("Calibrating Sensor ");
     Serial.println(sensorIndex);
+    
     calibrateSensor(sensorIndex, thresholds);
     delay(1000); // Delay between calibrations for stability
   }
